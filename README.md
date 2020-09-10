@@ -1,4 +1,4 @@
-# Windows10-bleakによるSwitchBotとの通信
+# BleakによるSwitchBotとの通信(Windows10)
 Window10でのSwitchBotとのBLE通信の方法を記述します。言語はpython
 # 要件
 * OS Windows10
