@@ -1,5 +1,6 @@
 # BleakによるSwitchBotとの通信(Windows10)
 Window10でのSwitchBotとのBLE通信の方法を記述します。言語はpython
+とはいえSwitchBotのための特別な仕様があるわけではなく、Bleakを使用してSwitchBotに接続して命令を送信しているだけです
 # 要件
 * OS Windows10
 * python 3.7.6
@@ -18,5 +19,4 @@ Window10がBlueTooth通信ができる状態である必要があります。Blu
 
     
     address = " " #各自のSwitchBotのMacアドレスに書き換える
-
 
