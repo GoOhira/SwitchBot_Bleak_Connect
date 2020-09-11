@@ -4,7 +4,7 @@ import time
 
 #switchbotのMacアドレス.[discover.py]で調べる必要がある
 address = " "
-#switchbotのUUID.
+#switchbotのUUID.SwitchBotのgithubから発掘
 UUID = "cba20002-224d-11e6-9fb8-0002a5d5c51b"
 
 
@@ -30,6 +30,8 @@ async def run(address, loop):
             elif command == "off":
                 write_byte = bytearray(b'\x57\x01\x02')
             elif command == "exit":
+                #[exit]と入力した場合、1秒後に終了
+                await asyncio.sleep(1.0, loop=loop)
                 break
             else:
                 print("コマンドを入力してください。\nコマンド → press,on,off,exit")
